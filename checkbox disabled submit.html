@@ -1,0 +1,25 @@
+<html>
+<head>
+<body>
+<script>
+ function func()
+ {
+   var gen=document.getElementsByName("vehicles");
+   if(gen[0].checked)
+   {
+    document.getElementById("b1").disabled=false;
+   }
+   else
+   {
+   document.getElementById("b1").disabled=true;
+   }
+   
+}   
+ </script>  
+<form>
+  <input type="checkbox" id="v1" name="vehicles" value="bike" onclick="func()">bike
+  <input type="button" id="b1" value="submit" disabled >
+ </form>
+ </body>
+ </head>
+ </html>
